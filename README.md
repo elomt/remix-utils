@@ -64,7 +64,7 @@ If you're not sure if your app uses ESM or CJS, check if you have `serverModuleF
 In case you don't have one, if you're using Remix v1 it will be CJS and if you're using Remix v2 it will be ESM.
 
 > **Note**
-> Some of the optional dependencies in Remix Utils may still be published as CJS, so you may need to add them to `serverDependenciesToBundle` too.
+> Some of the optional dependencies in Remix Utils may also be published as ESM, so you may need to add them to `serverDependenciesToBundle` too.
 
 Another thing to consider if you did the upgrade from Remix v1 to Remix v2 is that in your `tsconfig.json` you will need to set `"moduleResolution": "Bundler"`, otherwise TS will not resolve the new import paths.
 
